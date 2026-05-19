@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soil Science and Precision Agriculture Lab - IAAS</title>
+    <title>Contact - Soil Science and Precision Agriculture Lab</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -43,67 +43,82 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Soil Science and Precision Agriculture Lab</h1>
-        <p>Advancing agricultural productivity through innovative soil science research and precision farming
-            technologies at IAAS, Rampur Campus, Nepal</p>
-        <a href="about.html" class="cta-button">Learn About Us</a>
-    </section>
-
-    <!-- Quick Access Cards -->
+    <!-- Main Content -->
     <main>
-        <section id="home-cards" style="padding: 80px 0;">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Explore Our Work</h2>
+        <section id="contact" style="margin-top: 60px;">
+            <h2>Get In Touch</h2>
+            <p class="section-intro">Have a question about our research? Interested in collaboration? Want to join our
+                team? We'd love to hear from you. Feel free to contact us using the form below or reach out directly.
+            </p>
 
-            <div class="home-cards-grid">
-                <a href="about.html" class="home-card">
-                    <div class="card-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>About</h3>
-                    <p>Learn About Our Work & Lab's Mission</p>
-                </a>
+            <div class="contact-content">
+                <div>
+                    <div id="map-container"></div>
+                </div>
 
-                <a href="research.html" class="home-card">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-atom"></i>
-                    </div>
-                    <h3>Research</h3>
-                    <p>Explore Our Current Research Projects</p>
-                </a>
+                <div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name <span style="color: #ff6600;">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
 
-                <a href="opportunities.html" class="home-card">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Opportunities</h3>
-                    <p>Join Our Research Team</p>
-                </a>
+                        <div class="form-group">
+                            <label for="email">Email <span style="color: #ff6600;">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
 
-                <a href="publications.html" class="home-card">
-                    <div class="card-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Publications</h3>
-                    <p>Read Our Published Research</p>
-                </a>
+                        <div class="form-group">
+                            <label for="subject">Subject <span style="color: #ff6600;">*</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
 
-                <a href="gallery.html" class="home-card">
-                    <div class="card-icon">
-                        <i class="fas fa-images"></i>
-                    </div>
-                    <h3>Gallery</h3>
-                    <p>View Our Research in Action</p>
-                </a>
+                        <div class="form-group">
+                            <label for="message">Message <span style="color: #ff6600;">*</span></label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
 
-                <a href="team.html" class="home-card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Team</h3>
-                    <p>Meet Our Talented Researchers</p>
-                </a>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="contact-info-item">
+                    <h3><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>Location</h3>
+                    <p>
+                        IAAS, Rampur Campus<br>
+                        Chitwan, Nepal<br>
+                        27.607486° N, 84.565625° E
+                    </p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h3><i class="fas fa-phone" style="margin-right: 0.5rem;"></i>Phone</h3>
+                    <p>
+                        <a href="tel:+977-9861598849">+977-9861598849</a><br>
+                        Office: IAAS Rampur Campus<br>
+                        Available 9 AM - 5 PM (Nepal Time)
+                    </p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h3><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email</h3>
+                    <p>
+                        <a href="mailto:krishna.aryal@rc.tu.edu.np">krishna.aryal@rc.tu.edu.np</a><br>
+                        Inquiries, collaborations, and opportunities
+                    </p>
+                </div>
+            </div>
+
+            <div
+                style="margin-top: 3rem; background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #ff6600;">
+                <h3 style="margin-top: 0;">Office Hours</h3>
+                <p style="margin: 0.5rem 0;"><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                <p style="margin: 0.5rem 0;"><strong>Saturday - Sunday:</strong> Closed</p>
+                <p style="margin: 0.5rem 0; color: #666; font-size: 0.9rem;">For urgent matters, please call or email
+                    and we'll respond as soon as possible.</p>
             </div>
         </section>
     </main>
@@ -115,8 +130,8 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
                     <li><a href="research.html">Research</a></li>
+                    <li><a href="team.html">Team</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -134,9 +149,10 @@
             <div class="footer-section">
                 <h4>Follow Us</h4>
                 <div class="social-links">
-                    <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:krishna.aryal@rc.tu.edu.np" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/krishna-aryal-288367140/" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/krishnaaryal" title="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -146,6 +162,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
